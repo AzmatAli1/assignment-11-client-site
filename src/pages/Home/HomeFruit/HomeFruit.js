@@ -4,7 +4,8 @@ import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 
 
-const Fruit = ({ fruit }) => {
+const HomeFruit = ({ fruit }) => {
+    console.log(fruit);
     return (
         <Col>
             <Card className='bg-light'>
@@ -17,7 +18,7 @@ const Fruit = ({ fruit }) => {
                     <Card.Text>Supplier: {fruit.supplierName}</Card.Text>
                 </Card.Body>
                 <Card.Link>
-                    <Link to={`/fruits/${fruit._id}`}>
+                    <Link to={`/homefruit/${fruit._id}`}>
                         <button
                             className='btn btn-primary w-100'
                             variant="primary">Manage Fruits</button>
@@ -29,4 +30,4 @@ const Fruit = ({ fruit }) => {
     );
 };
 
-export default Fruit;
+export default HomeFruit;

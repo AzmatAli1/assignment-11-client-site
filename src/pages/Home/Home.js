@@ -1,12 +1,14 @@
 import Banner from '../Banner/Banner';
 import Row from 'react-bootstrap/Row';
 import useFruits from '../../hooks/useFruits/useFruits';
-import HomeFruit from './HomeFruit/HomeFruit';
 import { Link } from 'react-router-dom';
+import HomeFruit from './HomeFruit/HomeFruit';
 
 const Home = () => {
 
     const [fruits, setFruits] = useFruits();
+
+    // console.log(fruits);
 
     return (
         <div>

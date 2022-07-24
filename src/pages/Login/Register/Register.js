@@ -32,24 +32,27 @@ const Register = () => {
 
 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
         const confirmPassword = event.target.confirmPassword.value;
 
-        if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#$@!%&*?]{8,30}$/.test(password) === false) {
-            setPass(true);
-        }
-        else {
-            createUserWithEmailAndPassword(email, password);
-            setPassMatch(true);
-            setPass(false);
+        console.log(password, confirmPassword);
+        console.log(email);
 
-            setTerms(!terms);
-            event.target.reset();
-        }
+        // if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#$@!%&*?]{8,30}$/.test(password) === false) {
+        //     setPass(true);
+        // }
+        // else {
+        await createUserWithEmailAndPassword(email, password);
+        setPassMatch(true);
+        setPass(false);
+
+        setTerms(!terms);
+        event.target.reset();
+        // }
 
     }
 

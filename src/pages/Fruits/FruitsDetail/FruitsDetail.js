@@ -3,16 +3,18 @@ import { Card } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
 const FruitsDetail = () => {
-    const fruitId = useParams().fruitId;
+    const id = useParams().id;
     const [fruit, setFruit] = useState({});
 
-    const url = `http://localhost:5000/fruits/${fruitId}`;
+    const url = `http://localhost:5000/fruits/${id}`;
 
     useEffect(() => {
-        // const url = `http://localhost:5000/fruits/${fruitId}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setFruit(data));
+            .then(data => {
+                console.log(data);
+                setFruit(data);
+            });
     }, []);
 
     const handleQuantity = (event) => {
