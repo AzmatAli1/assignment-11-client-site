@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
 import Register from './pages/Login/Register/Register';
 import Login from './pages/Login/Login/Login';
+import FruitsDetails from './pages/Fruits/FruitsDetail/FruitsDetail';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/fruitsDetails' element={<FruitsDetails></FruitsDetails>}></Route>
       </Routes>
     </div>
   );

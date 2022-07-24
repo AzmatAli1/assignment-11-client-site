@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+<h2>Bullet Point</h2>
+<ul>
+<li>Warehouses since fruits collection</li>
+<li> Available fruits collection and check it adverse fruits</li>
+<li> This fruits available any time collection this site</li>
+<li> It will be fruits add and fruits cart this position and added to a local file</li>
+</ul>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
