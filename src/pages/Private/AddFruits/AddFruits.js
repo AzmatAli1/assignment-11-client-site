@@ -34,7 +34,7 @@ const AddFruits = () => {
             }
 
 
-            const URL = `http://localhost:5000/fruits`;
+            const URL = `https://infinite-springs-96070.herokuapp.com/fruits`;
 
             fetch(URL, {
                 method: 'POST',
@@ -50,7 +50,7 @@ const AddFruits = () => {
                     const newRecord = newFruit;
 
 
-                    const Url = `http://localhost:5000/add`;
+                    const Url = `https://infinite-springs-96070.herokuapp.com/add`;
 
                     fetch(Url, {
                         method: 'POST',

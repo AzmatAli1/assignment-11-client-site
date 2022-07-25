@@ -4,7 +4,7 @@ const useFruits = () => {
     const [fruits, setFruits] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/fruits`;
+        const url = `https://infinite-springs-96070.herokuapp.com/fruits`;
         fetch(url)
             .then(res => res.json())
             .then(data => setFruits(data));
