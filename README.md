@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-# Heroku Link: https://infinite-springs-96070.herokuapp.com
+# Heroku Link: https://infinite-springs-96070.herokuapp.com/fruits
 
 <h2>Bullet Point</h2>
 <ul>
