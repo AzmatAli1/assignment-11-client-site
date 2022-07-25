@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+# Firebase Live server Link: https://fruits-gallery.firebaseapp.com/
+
 # Heroku Link: https://infinite-springs-96070.herokuapp.com/fruits
 
 <h2>Bullet Point</h2>
