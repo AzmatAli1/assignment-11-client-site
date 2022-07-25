@@ -18,16 +18,16 @@ const Header = () => {
     }
 
     return (
-        <Navbar className='sticky-top' bg="warning" expand="lg">
+        <Navbar className='sticky-top' bg="primary" expand="lg">
             <Container>
-                <Navbar.Brand className='text-success fst-italic fw-semibold' href="/">Fresh Fruits Gallery</Navbar.Brand>
+                <Navbar.Brand className='text-white fw-semibold' href="/">Fresh Fruits Gallery</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto text-white">
                         <Nav.Link href="/home">Home</Nav.Link>
                         <Nav.Link href="/blogs">Blogs</Nav.Link>
                     </Nav>
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto text-white">
                         {
                             user ?
                                 <>

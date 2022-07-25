@@ -7,7 +7,7 @@ const MyFruits = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        const url = 'https://infinite-springs-96070.herokuapp.com/add';
+        const url = 'http://localhost:5000/add';
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -21,7 +21,7 @@ const MyFruits = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure, you want to delete this fruit?");
         if (proceed) {
-            const url = `https://infinite-springs-96070.herokuapp.com/add/${id}`;
+            const url = `http://localhost:5000/add/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

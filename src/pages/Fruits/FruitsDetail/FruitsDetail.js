@@ -6,7 +6,7 @@ const FruitsDetail = () => {
     const id = useParams().id;
     const [fruit, setFruit] = useState({});
 
-    const url = `https://infinite-springs-96070.herokuapp.com/fruits/${id}`;
+    const url = `http://localhost:5000/fruits/${id}`;
 
     useEffect(() => {
         fetch(url)

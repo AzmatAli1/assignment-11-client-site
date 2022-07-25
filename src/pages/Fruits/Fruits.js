@@ -9,7 +9,7 @@ const Fruits = () => {
 
     const handleDelete = (id) => {
         // console.log('delete', id);
-        const url = `https://infinite-springs-96070.herokuapp.com/fruits/${id}`;
+        const url = `http://localhost:5000/fruits/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
